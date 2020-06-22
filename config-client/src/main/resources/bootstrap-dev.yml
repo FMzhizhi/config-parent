@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: config-single-client
+  cloud:
+    config:
+      uri: http://localhost:3301  # 配置spring cloud config服务端的url
+      label: master   # 指定gitlab仓库的分支
+      profile: dev      # 指定profile
